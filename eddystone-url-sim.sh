@@ -22,7 +22,7 @@ EOF
 
 cleanup() {
   trap - SIGINT SIGTERM ERR EXIT
-  # script cleanup here
+  ./advertise-url -s
 }
 
 setup_colors() {
